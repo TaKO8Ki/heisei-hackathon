@@ -23,66 +23,22 @@
   </header>
 
   <body>
-    <div class="index">
-      <div class="content">
-        <div class="column">
-          <div class="item">
-            <div class="image">
-              <img src="https://i.gyazo.com/3e8b5a7503dc1f239a01b0df2b02b9cc.png"/>
-            </div>
-            <div class="title"></div>
+    <div class="show">
+      <div class="top">
+        <div class="image">
+          <div>
+            <img src="https://i.gyazo.com/3e8b5a7503dc1f239a01b0df2b02b9cc.png"/>
           </div>
-          <div class="item">
-            <div class="image">
-              <img src="https://i.gyazo.com/3e8b5a7503dc1f239a01b0df2b02b9cc.png"/>
-            </div>
-            <div class="title"></div>
-          </div>
-          <div class="item">
-            <div class="image">
-              <img src="https://i.gyazo.com/3e8b5a7503dc1f239a01b0df2b02b9cc.png"/>
-            </div>
-            <div class="title"></div>
+          <div>
+            <img src="https://i.gyazo.com/3e8b5a7503dc1f239a01b0df2b02b9cc.png"/>
           </div>
         </div>
-        <div class="column">
-          <div class="item">
-            <div class="image">
-              <img src="https://i.gyazo.com/3e8b5a7503dc1f239a01b0df2b02b9cc.png"/>
-            </div>
-            <div class="title"></div>
-          </div>
-          <div class="item">
-            <div class="image">
-              <img src="https://i.gyazo.com/3e8b5a7503dc1f239a01b0df2b02b9cc.png"/>
-            </div>
-            <div class="title"></div>
-          </div>
-          <div class="item">
-            <div class="image">
-              <img src="https://i.gyazo.com/3e8b5a7503dc1f239a01b0df2b02b9cc.png"/>
-            </div>
-            <div class="title"></div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="item">
-            <div class="image">
-              <img src="https://i.gyazo.com/3e8b5a7503dc1f239a01b0df2b02b9cc.png"/>
-            </div>
-            <div class="title"></div>
-          </div>
-          <div class="item">
-            <div class="image">
-              <img src="https://i.gyazo.com/3e8b5a7503dc1f239a01b0df2b02b9cc.png"/>
-            </div>
-            <div class="title"></div>
-          </div>
-          <div class="item">
-            <div class="image">
-              <img src="https://i.gyazo.com/3e8b5a7503dc1f239a01b0df2b02b9cc.png"/>
-            </div>
-            <div class="title"></div>
+        <div class="vs">VS</div>
+      </div>
+      <div class="bottom">
+        <div class="content">
+          <div class="balloon">
+            コメント
           </div>
         </div>
       </div>
@@ -120,6 +76,45 @@
 
   body .index .item .title {
     padding: 0px 20px;
+  }
+  .balloon{
+  position: relative;
+  padding: 20px;
+  background-color: #fff3ad;
+  display: inline-block;  
+  }
+  .balloon::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    left: -15px;
+    top: 20px;
+    border-right: 15px solid #fff3ad;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+  }
+
+  .show .top .image {
+    display: flex;
+    width: 550px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .show .top .image img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: solid 1px #ccc;
+  } 
+
+  .show .top .vs {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
   }
 </style>
 
