@@ -1,6 +1,6 @@
 body {
   background: #fcfcfc;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Noto Sans JP', sans-serif;
 }
 body a {
   text-decoration: none;
@@ -19,20 +19,19 @@ body .index .column {
   justify-content: space-between;
   margin-bottom: 30px;
 }
-body .index .item {
-  box-shadow: 0 5px 30px rgba(0,0,0,0.15);
-  width: 300px;
-  border-radius: 5px;
-  padding: 20px 0px;
+body .index .card {
+  margin: 0;
+  width: 310px;
 }
-body .index .item .title {
-  padding: 0px 20px;
-}
-header .content {
+header {
   width: 100%; 
-  text-align: center;
   border-bottom: solid 1px #ddd;
   padding: 18px;
   top: 0;
   margin-bottom: 50px;
+}
+
+header .content {
+  width: 1000px;
+  margin: 0 auto;
 }

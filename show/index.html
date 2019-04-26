@@ -1,44 +1,189 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="テスト" />
-    <meta property="og:url" content="https://tako8ki.github.io/portfolio/" />
-    <meta property="og:title" content="@TaKO8Kiのポートフォリオ" />
-    <meta property="og:description" content="@TaKO8Kiのポートフォリオ" />
-    <meta property="og:image" content="https://i.gyazo.com/86af65b8b6c927987e48e28b612968bc.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta charset="UTF-8">
-    <title>@TaKO8Kiのポートフォリオ</title>
+    <title>平成最後のハッカソン</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/marx/2.0.4/marx.css">
     <link rel="stylesheet" type="text/css" href="show.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
   </head>
 
   <header>
     <div class="content">
-      header
+      <div class="popupModal1">
+        <input type="radio" name="modalPop" id="pop11" />
+        <label class="image" for="pop11">
+          クリックしてポップアップを開く（SNS用）
+        </label>
+        <input type="radio" name="modalPop" id="pop12" />
+        <label for="pop12"></label>
+        <input type="radio" name="modalPop" id="pop13" />
+        <label class="delete" for="pop13"></label>
+        <div class="modalPopup2">
+          <div class="modalPopup3">
+          <div class="modalMain">
+            <p class='title'>SNS</p>
+            <a href="https://twitter.com/share?url=https://twitter.com/&text=平成最後のハッカソン&hashtags=平成バトル,平成最後のハッカソン" rel="nofollow" target="_blank" class="twitter-button">
+              ツイートする
+            </a>
+            <a href="#" rel="nofollow" target="_blank" class="facebook-button">
+              Facebook
+            </a>
+          </div>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
   <body>
     <div class="show">
-      <div class="top">
-        <div class="image">
-          <div>
-            <img src="https://i.gyazo.com/3e8b5a7503dc1f239a01b0df2b02b9cc.png"/>
+      <div class='top'>
+        <div class="vote-ration">
+          <div class="red">
+            70%
           </div>
-          <div>
-            <img src="https://i.gyazo.com/3e8b5a7503dc1f239a01b0df2b02b9cc.png"/>
+          <div class="blue">
+            30%
           </div>
         </div>
-        <div class="vs">VS</div>
+        <div class="column">
+          <div>
+            <div class="card">
+              <div class="card-image">
+                <img src="https://i.gyazo.com/3e8b5a7503dc1f239a01b0df2b02b9cc.png"/>
+              </div>
+              <div class="card-content">昔の車</div>
+            </div>
+            <button class="btn waves-effect waves-light vote-button" type="submit" name="action">
+              投票する
+            </button>
+          </div>
+          <div>
+            <div class="card">
+              <div class="card-image">
+                <img src="https://i.gyazo.com/3e8b5a7503dc1f239a01b0df2b02b9cc.png"/>
+              </div>
+              <div class="card-content">今の車</div>
+            </div>
+            <button class="btn waves-effect waves-light vote-button" type="submit" name="action">
+              投票する
+            </button>
+          </div>
+        </div>
+
+        <div class="comments">
+          <ul class="collection">
+            <li class="collection-item avatar">
+              <img src="images/yuna.jpg" alt="" class="circle">
+              <span class="title">タイトル</span>
+              <p>
+                コメント本文
+              </p>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle">folder</i>
+              <span class="title">タイトル</span>
+              <p>
+                コメント本文
+              </p>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle green">insert_chart</i>
+              <span class="title">タイトル</span>
+              <p>
+                コメント本文
+              </p>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle red">play_arrow</i>
+              <span class="title">タイトル</span>
+              <p>
+                コメント本文
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="bottom">
+
+      <div class='middle'>
+        <div class="twitter-timeline">
+          <div>
+            <p class="title">昔の車</p>
+            <div class="content">
+              <a class="twitter-timeline" data-height="450" data-theme="light" href="https://twitter.com/CyberAgent_PR?ref_src=twsrc%5Etfw">Tweets by CyberAgent_PR</a> 
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>
+          <div>
+            <p class="title">今の車</p>
+            <div class="content">
+              <a class="twitter-timeline" data-height="450" data-theme="light" href="https://twitter.com/CyberAgent_PR?ref_src=twsrc%5Etfw">Tweets by CyberAgent_PR</a> 
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class='bottom'>
         <div class="content">
-          <div class="balloon">
-            コメント
+          <p class="title">他の投票を見る</p>
+          <div class="column">
+            <a href="https://tako8ki.github.io/heisei-hackathon/show/">
+              <div class="card">
+                <div class="card-image">
+                  <img src="https://i.gyazo.com/3e8b5a7503dc1f239a01b0df2b02b9cc.png"/>
+                </div>
+                <div class="card-content">昔と今の車どっちの方がいい？</div>
+              </div>
+            </a>
+            <a href="https://tako8ki.github.io/heisei-hackathon/show/">
+              <div class="card">
+                <div class="card-image">
+                  <img src="https://i.gyazo.com/3e8b5a7503dc1f239a01b0df2b02b9cc.png"/>
+                </div>
+                <div class="card-content">昔と今の車どっちの方がいい？</div>
+              </div>
+            </a>
+            <a href="https://tako8ki.github.io/heisei-hackathon/show/">
+              <div class="card">
+                <div class="card-image">
+                  <img src="https://i.gyazo.com/3e8b5a7503dc1f239a01b0df2b02b9cc.png"/>
+                </div>
+                <div class="card-content">昔と今の車どっちの方がいい？</div>
+              </div>
+            </a>
+          </div>
+          <div class="column">
+            <a href="https://tako8ki.github.io/heisei-hackathon/show/">
+              <div class="card">
+                <div class="card-image">
+                  <img src="https://i.gyazo.com/3e8b5a7503dc1f239a01b0df2b02b9cc.png"/>
+                </div>
+                <div class="card-content">昔と今の車どっちの方がいい？</div>
+              </div>
+            </a>
+            <a href="https://tako8ki.github.io/heisei-hackathon/show/">
+              <div class="card">
+                <div class="card-image">
+                  <img src="https://i.gyazo.com/3e8b5a7503dc1f239a01b0df2b02b9cc.png"/>
+                </div>
+                <div class="card-content">昔と今の車どっちの方がいい？</div>
+              </div>
+            </a>
+            <a href="https://tako8ki.github.io/heisei-hackathon/show/">
+              <div class="card">
+                <div class="card-image">
+                  <img src="https://i.gyazo.com/3e8b5a7503dc1f239a01b0df2b02b9cc.png"/>
+                </div>
+                <div class="card-content">昔と今の車どっちの方がいい？</div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -46,75 +191,4 @@
   </body>
 
 </html>
-
-<style type="text/css">
-  header .content {
-    width: 100%; 
-    text-align: center;
-    border-bottom: solid 1px #ddd;
-    padding: 18px;
-    top: 0;
-    margin-bottom: 50px;
-  }
-  body {
-  }
-  body .index {
-    width: 1000px;
-    margin: 0 auto;
-  }
-  body .index .column {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-  }
-  body .index .item {
-    box-shadow: 0 5px 30px rgba(0,0,0,0.15);
-    width: 300px;
-    border-radius: 5px;
-    padding: 20px 0px;
-  }
-
-  body .index .item .title {
-    padding: 0px 20px;
-  }
-  .balloon{
-  position: relative;
-  padding: 20px;
-  background-color: #fff3ad;
-  display: inline-block;  
-  }
-  .balloon::before{
-    content: '';
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-    left: -15px;
-    top: 20px;
-    border-right: 15px solid #fff3ad;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-  }
-
-  .show .top .image {
-    display: flex;
-    width: 550px;
-    margin: 0 auto;
-    justify-content: space-between;
-  }
-
-  .show .top .image img {
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border: solid 1px #ccc;
-  } 
-
-  .show .top .vs {
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-  }
-</style>
 
