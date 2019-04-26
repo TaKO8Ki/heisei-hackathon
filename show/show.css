@@ -69,6 +69,7 @@ header {
 
 .twitter-timeline div.content {
   border: solid 1px #e0e0e0;
+  background: #fff;
 }
 .twitter-timeline p.title {
   text-align: center;
